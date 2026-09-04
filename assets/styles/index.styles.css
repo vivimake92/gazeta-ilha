@@ -57,3 +57,55 @@ button {
   font-size: 15px;
   font-weight: bold;
 }
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.headline-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2efe8;
+  border: 1px solid #ddd7cb;
+  color: #57534d;
+  font-size: 14px;
+  height: 180px;
+}
+
+.headline-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.kicker {
+  font-size: 13px;
+  font-weight: bold;
+  color: #9c2a1f;
+}
+
+.headline-text h2 {
+  font-size: 24px;
+  line-height: 1.25;
+}
+
+.summary {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #57534d;
+}
+
+.byline {
+  font-size: 13px;
+  color: #57534d;
+}
