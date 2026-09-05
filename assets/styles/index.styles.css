@@ -156,3 +156,18 @@ button {
   color: #9c2a1f;
   margin-top: auto;
 }
+
+@media (min-width: 1080px) {
+  body {
+    max-width: 1120px;
+  }
+
+  .headline {
+    flex-direction: row;
+  }
+
+  .headline-photo {
+    width: 300px;
+    height: 220px;
+  }
+}
