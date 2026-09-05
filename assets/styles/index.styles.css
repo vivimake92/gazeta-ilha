@@ -157,9 +157,73 @@ button {
   margin-top: auto;
 }
 
-@media (min-width: 1080px) {
+.most-read {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.read-item {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  border-bottom: 1px solid #ddd7cb;
+  padding-bottom: 12px;
+}
+
+.read-number {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 26px;
+  font-weight: bold;
+  color: #9c2a1f;
+}
+
+.read-item p {
+  font-size: 15px;
+  line-height: 1.35;
+}
+
+.box {
+  background-color: #f2efe8;
+  border: 1px solid #ddd7cb;
+  padding: 14px;
+}
+
+.box-title {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.box-line {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #57534d;
+}
+
+.site-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-top: 2px solid #1c1b19;
+  margin-top: 32px;
+  padding-top: 20px;
+}
+
+.footer-title {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.footer-line {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #57534d;
+}
+
+@media (min-width: 720px) {
   body {
-    max-width: 1120px;
+    max-width: 900px;
   }
 
   .headline {
@@ -169,5 +233,35 @@ button {
   .headline-photo {
     width: 300px;
     height: 220px;
+  }
+
+  .headline-text {
+    flex: 1;
+  }
+
+  .stories {
+    flex-direction: row;
+  }
+
+  .story {
+    flex: 1;
+  }
+  .site-footer {
+    flex-direction: row;
+  }
+
+  .footer-column {
+    flex: 1;
+  }
+}
+
+@media (min-width: 1080px) {
+  body {
+    max-width: 1120px;
+  }
+
+  .content {
+    flex-direction: row;
+    align-items: flex-start;
   }
 }
